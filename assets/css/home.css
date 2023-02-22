@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+/* line 4, ../scss/home.scss */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1E1E1E;
+}
+@media screen and (max-width: 768px) {
+  /* line 4, ../scss/home.scss */
+  body {
+    height: 100%;
+  }
+}
+
+/* line 15, ../scss/home.scss */
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+/* line 18, ../scss/home.scss */
+main .container .top-section {
+  display: flex;
+  gap: 30px;
+}
+/* line 21, ../scss/home.scss */
+main .container .top-section .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #363447;
+  padding: 30px 50px;
+  border-radius: 15px;
+}
+/* line 27, ../scss/home.scss */
+main .container .top-section .card .center {
+  width: 100%;
+  max-width: 200px;
+}
+/* line 33, ../scss/home.scss */
+main .container .top-section .card .bottom p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* line 39, ../scss/home.scss */
+main .container .top-section .card.circle .bottom {
+  display: flex;
+  gap: 20px;
+}
+/* line 42, ../scss/home.scss */
+main .container .top-section .card.circle .bottom .left,
+main .container .top-section .card.circle .bottom .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* line 47, ../scss/home.scss */
+main .container .top-section .card.circle .bottom button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+/* line 52, ../scss/home.scss */
+main .container .top-section .card.circle .bottom button.check {
+  background-color: #4A4556;
+}
+/* line 56, ../scss/home.scss */
+main .container .top-section .card.circle .bottom button.checked-purple {
+  background-image: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);
+}
+/* line 60, ../scss/home.scss */
+main .container .top-section .card.circle .bottom button.checked-pink {
+  background-image: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);
+}
+/* line 69, ../scss/home.scss */
+main .container .top-section .card:first-child .center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+/* line 72, ../scss/home.scss */
+main .container .top-section .card:first-child .center span {
+  color: #81FBB8;
+  font-weight: 600;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../scss/home.scss */
+  main .container .top-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+/* line 85, ../scss/home.scss */
+main .container .bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 320px;
+  background-color: #363447;
+  padding: 30px;
+  border-radius: 15px;
+}
+/* line 93, ../scss/home.scss */
+main .container .bottom-section .left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* line 98, ../scss/home.scss */
+main .container .bottom-section .left .more .top,
+main .container .bottom-section .left .minus .top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* line 103, ../scss/home.scss */
+main .container .bottom-section .left p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+}
+/* line 107, ../scss/home.scss */
+main .container .bottom-section .left h3 {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 10px;
+}
+/* line 113, ../scss/home.scss */
+main .container .bottom-section .right {
+  display: flex;
+  align-items: flex-end;
+  gap: 72px;
+  position: relative;
+  max-height: 186px;
+}
+/* line 118, ../scss/home.scss */
+main .container .bottom-section .right .row {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: #4A4556;
+  height: 3px;
+}
+/* line 127, ../scss/home.scss */
+main .container .bottom-section .right .dom,
+main .container .bottom-section .right .seg,
+main .container .bottom-section .right .ter,
+main .container .bottom-section .right .qua,
+main .container .bottom-section .right .qui,
+main .container .bottom-section .right .sex,
+main .container .bottom-section .right .sab {
+  z-index: 10;
+}
+/* line 137, ../scss/home.scss */
+main .container .bottom-section .right .cyan {
+  z-index: 10;
+  background-image: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  width: 15px;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+/* line 144, ../scss/home.scss */
+main .container .bottom-section .right .cyan.dom {
+  height: 40px;
+}
+/* line 148, ../scss/home.scss */
+main .container .bottom-section .right .cyan.seg {
+  height: 115px;
+}
+/* line 152, ../scss/home.scss */
+main .container .bottom-section .right .cyan.ter {
+  height: 76px;
+}
+/* line 156, ../scss/home.scss */
+main .container .bottom-section .right .cyan.qua {
+  height: 159px;
+}
+/* line 160, ../scss/home.scss */
+main .container .bottom-section .right .cyan.qui {
+  height: 130px;
+}
+/* line 164, ../scss/home.scss */
+main .container .bottom-section .right .cyan.sex {
+  height: 120px;
+}
+/* line 168, ../scss/home.scss */
+main .container .bottom-section .right .cyan.sab {
+  height: 70px;
+}
+/* line 173, ../scss/home.scss */
+main .container .bottom-section .right p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  /* line 85, ../scss/home.scss */
+  main .container .bottom-section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/* line 184, ../scss/home.scss */
+main .container h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 24px;
+}

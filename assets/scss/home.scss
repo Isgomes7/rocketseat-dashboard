@@ -1,0 +1,188 @@
+@import "mixin";
+@import "var";
+
+body {
+    @include flex(center, center);
+    height: 100vh;
+    background-color: $c-background;
+
+    @include bp(max-width, $bp-medium) {
+        height: 100%;
+    }
+}
+
+main {
+    .container {
+        @include flex(center, center, column, 60px);
+
+        .top-section {
+            @include flex('', '', '', $trim);
+
+            .card {
+                @include flex(center, space-between, column, $trim);
+                background-color: $c-card;
+                padding: $trim $large;
+                border-radius: $trim-small;
+
+                .center {
+                    width: 100%;
+                    max-width: 200px;
+                }
+
+                .bottom {
+                    p {
+                        @include text('', $c-white, '', 500, $trim-small);
+                    }
+                }
+
+                &.circle {
+                    .bottom {
+                        @include flex('', '', '', $box-spacing);
+
+                        .left,
+                        .right {
+                            @include flex(center, '', '', $gap);
+                        }
+
+                        button {
+                            width: $trim-small;
+                            height: $trim-small;
+                            border-radius: 50%;
+
+                            &.check {
+                                background-color: $c-button;
+                            }
+
+                            &.checked-purple {
+                                background-image: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);
+                            }
+
+                            &.checked-pink {
+                                background-image: linear-gradient(121.94deg, #DF9780 15.98%, #A66DE9 82.85%);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card:first-child {
+                .center {
+                    @include flex(center, '', column, $box-spacing);
+
+                    span {
+                        @include text('', $c-green, '', 600, 24px);
+                    }
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                @include flex('', '', column, $trim);
+                width: 100%;
+                padding-top: $large;
+            }
+        }
+
+        .bottom-section {
+            @include flex(center, space-between);
+            width: 100%;
+            min-height: 320px;
+            background-color: $c-card;
+            padding: $trim;
+            border-radius: $trim-small;
+
+            .left {
+                @include flex('', '', column, 32px);
+
+                .more,
+                .minus {
+                    .top {
+                        @include flex(center, '', '', $gap);
+                    }
+                }
+
+                p {
+                    @include text('', $c-white, '', 500, $trim-small);
+                }
+
+                h3 {
+                    @include text('', $c-white, '', 500, 24px);
+                    margin-top: $gap;
+                }
+            }
+
+            .right {
+                @include flex(flex-end, '', '', 72px);
+                position: relative;
+                max-height: 186px;
+
+                .row {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    background-color: $c-button;
+                    height: 3px;
+                }
+
+                .dom,
+                .seg,
+                .ter,
+                .qua,
+                .qui,
+                .sex,
+                .sab {
+                    z-index: 10;
+                }
+
+                .cyan {
+                    z-index: 10;
+                    background-image: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+                    width: $trim-small;
+                    border-radius: 999px;
+                    margin: 0 auto;
+
+                    &.dom {
+                        height: $box-spacing + $box-spacing;
+                    }
+
+                    &.seg {
+                        height: $big + $trim-small;
+                    }
+
+                    &.ter {
+                        height: $large + $box-spacing + 6px;
+                    }
+
+                    &.qua {
+                        height: $big + $large + 9px;
+                    }
+
+                    &.qui {
+                        height: $big + $trim;
+                    }
+
+                    &.sex {
+                        height: $big + $box-spacing;
+                    }
+
+                    &.sab {
+                        height: $large + $box-spacing;
+                    }
+                }
+
+                p {
+                    @include text('', $c-white, '', 500, $trim-small);
+                    margin-top: $small;
+                }
+            }
+
+            @include bp(max-width, $bp-medium) {
+                @include flex(flex-start, '', column, $trim);
+            }
+        }
+
+        h2 {
+            @include text('', $c-white, '', 600, 24px);
+        }
+    }
+}

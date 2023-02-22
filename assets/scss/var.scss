@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// Breakpoints
+
+$bp-xsmall: 320px;
+$bp-small: 599px;
+$bp-medium: 768px;
+$bp-large: 979px;
+$bp-xlarge: 1199px;
+
+// Spacing //
+
+$small: 5px;
+$gap: 10px;
+$box-spacing: 20px;
+$trim: 30px;
+$trim-small: 15px;
+$large: 50px;
+$x-large: 80px;
+$big: 100px;
+
+// Colors
+
+$c-background: #1E1E1E;
+$c-green: #81FBB8;
+$c-card: #363447;
+$c-gray: #D9D9D9;
+$c-button: #4A4556;
+$c-white: #FFFFFF;
+$c-black: #000000;
+// Typography
+
+$f-stack-sans: 'Inter', sans-serif;
+
+// Body Copy
+
+$f-size-default: 16px;
